@@ -18,6 +18,7 @@ public class Score : MonoBehaviour
     {
         myScore++;
         unit++;
+
         if (unit >= 10)
         {
             unit = 0;
@@ -39,8 +40,7 @@ public class Score : MonoBehaviour
 
     private void changeScore(int pointU ,int pointD)
     {
-        Debug.Log(myScore);
-
+        //Debug.Log(myScore);
         ScoreDizaine.sprite = Number[pointD];
         ScoreUnite.sprite = Number[pointU];
     }
